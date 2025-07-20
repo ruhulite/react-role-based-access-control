@@ -7,6 +7,32 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+
+## Technology uses
+- React
+- Vite
+- Javascript
+- Axios
+
+## CSS Framework
+- Tailwind
+
+## For Database
+- json-server
+
+## Project Instruction
+
+To run the project steps to follow
+
+- cd backend: npx json-server db.json
+- cd frontend: npm run dev
+- Registerd a user then login
+- there will ba admin panel with crud (Quiz builder application)
+- if user has role permission he will see the permission panel
+- User panel in progress
+- Admin panelin progress -> setting up the permission to according component
+
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

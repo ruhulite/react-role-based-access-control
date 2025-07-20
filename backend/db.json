@@ -1,0 +1,25 @@
+{
+  "quizes": [
+    {
+      "id": "7c0e",
+      "title": "What is React",
+      "description": "React, also known as React.js or ReactJS, is a free and open-source front-end JavaScript library for building user interfaces (UIs). It is maintained by Meta (formerly Facebook) and a community of individual developers and companies"
+    }
+  ],
+  "users": [
+    {
+      "id": "70a6",
+      "username": "ruhul",
+      "email": "ruhul@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      "id": "e9bf",
+      "username": "john",
+      "email": "john@gmail.com",
+      "password": "123",
+      "confirmPassword": "123"
+    }
+  ]
+}
