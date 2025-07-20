@@ -24,6 +24,8 @@ Currently, two official plugins are available:
 
 To run the project steps to follow
 
+- git clone https://github.com/BrainStation23HR/React_Ruhul.git
+
 - cd backend: npx json-server db.json
 - cd frontend: npm run dev
 - Registerd a user then login
