@@ -9,6 +9,16 @@
       "id": "aaa5",
       "title": "what is vite",
       "description": "Vite is a build tool and development server designed for modern web development, emphasizing speed and a streamlined developer experience. It leverages native ES modules during development and uses Rollup for production builds. This approach results in faster server startup and module replacement compared to traditional bundlers like Webpack. "
+    },
+    {
+      "id": "af0e",
+      "title": "CSS Flex Container",
+      "description": "The flex-direction property specifies the display-direction of flex items in the flex container.\n\nThe flex-direction property can have one of the following values:\n\nrow\ncolumn\nrow-reverse\ncolumn-reverse"
+    },
+    {
+      "id": "b84f",
+      "title": "CSS Grid Layout Module",
+      "description": "The Grid Layout Module offers a grid-based layout system, with rows and columns.\n\nThe Grid Layout Module allows developers to easily create complex web layouts.\n\nThe Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.\n\nThe CSS grid properties are supported in all modern browsers."
     }
   ],
   "users": [

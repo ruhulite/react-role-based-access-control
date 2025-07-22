@@ -11,17 +11,13 @@ const HomePage = () => {
     const [items, setItems] = useState([]);
     const [error, setError] = useState(null);
 
-    const getData = () => {
+    useEffect( () => {
         api.get('/quizes').then((response) => {
             setItems(response.data);
         }).catch((error) => {
             console.log(error);
             setError(error);
         })
-    }
-
-    useEffect( () => {
-        getData();
     }, []);
 
     const handleLogout = () => {
