@@ -3,7 +3,8 @@ import LoginPage from "./pages/LoginPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import { ProtectedRoute } from "./components/ProtectedRoute.jsx";
-import AdminPermission from "./pages/admin/AdminPermission.jsx";
+import AdminPermissionPage from "./pages/admin/AdminPermissionPage.jsx";
+import AdminPage from "./pages/admin/AdminPage.jsx";
 
 export const routes = createBrowserRouter([
     {
@@ -20,8 +21,13 @@ export const routes = createBrowserRouter([
                 errorElement: <ErrorPage />,
             },
             {
+                path: '/admin',
+                element: <AdminPage />,
+                errorElement: <ErrorPage />,
+            },
+            {
                 path: '/admin-permission',
-                element: <AdminPermission />,
+                element: <AdminPermissionPage />,
                 errorElement: <ErrorPage />,
             }
         ]

@@ -33,6 +33,7 @@ const QuizForm = ({editId, onSubmitData}) => {
         className="rounded-lg shadow-md w-md pb-6 mx-auto pl-6 pr-6 pt-5 mt-6"
         onSubmit={handleSubmit}
     >
+        <h2 className="text-gray-900 text-lg text-center font-bold w-full capitalize mb-6">Add Quiz</h2>
         {error && (<p className="text-red-500 text-center text-sm mb-3">{error}</p>)}
         <div className="mb-4">
             <p className="text-gray-600 text-sm font-bold mb-2">Quiz Title</p>

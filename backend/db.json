@@ -3,7 +3,12 @@
     {
       "id": "7c0e",
       "title": "What is React",
-      "description": "React, also known as React.js or ReactJS, is a free and open-source front-end JavaScript library for building user interfaces (UIs). It is maintained by Meta (formerly Facebook) and a community of individual developers and companies"
+      "description": "React, also known as React.js or ReactJS, is a free and open-source front-end JavaScript library for building user interfaces (UIs). It is maintained by Meta (formerly Facebook) and a community of individual developers and companies UPDATED"
+    },
+    {
+      "id": "aaa5",
+      "title": "what is vite",
+      "description": "Vite is a build tool and development server designed for modern web development, emphasizing speed and a streamlined developer experience. It leverages native ES modules during development and uses Rollup for production builds. This approach results in faster server startup and module replacement compared to traditional bundlers like Webpack. "
     }
   ],
   "users": [
@@ -12,14 +17,47 @@
       "username": "ruhul",
       "email": "ruhul@gmail.com",
       "password": "12345",
-      "confirmPassword": "12345"
+      "confirmPassword": "12345",
+      "role": "Super Admin",
+      "permissions": [
+        "Can view",
+        "Can edit",
+        "Can delete"
+      ]
     },
     {
       "id": "e9bf",
       "username": "john",
       "email": "john@gmail.com",
       "password": "123",
-      "confirmPassword": "123"
+      "confirmPassword": "123",
+      "role": "Admin",
+      "permissions": [
+        "Can view",
+        "Can edit"
+      ]
+    },
+    {
+      "id": "2824",
+      "username": "Ehan",
+      "email": "ehan@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "User",
+      "permissions": [
+        "Can view"
+      ]
+    },
+    {
+      "id": "3383",
+      "username": "Rayyan",
+      "email": "rayyan@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "User",
+      "permissions": [
+        "Can view"
+      ]
     }
   ]
 }
