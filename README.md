@@ -24,15 +24,13 @@ Currently, two official plugins are available:
 
 To run the project steps to follow
 
-- git clone https://github.com/BrainStation23HR/React_Ruhul.git
+- git clone https://github.com/ruhulite/react-role-based-access-control.git
 
 - cd backend: npx json-server db.json
 - cd frontend: npm run dev
-- Registerd a user then login
-- there will ba admin panel with crud (Quiz builder application)
-- if user has role permission he will see the permission panel
-- User panel in progress
-- Admin panelin progress -> setting up the permission to according component
+- Registered a user then login
+- There are three types of role: Super Admin, Admin and User
+- There are role based permission also to View, Edit and Delete
 
 
 ## Expanding the ESLint configuration
