@@ -76,7 +76,7 @@ const AdminPage = () => {
         navigate('/login');
     }
 
-    return <div className="container container-md mx-auto px-2 flex flex-col w-full items-center h-screen">
+    return <div className="container container-sm mx-auto px-2 flex flex-col w-full items-center h-full">
         <div className="bg-white rounded-lg shadow-md mx-w-300 p-4 mt-10">
             <h2 className="text-gray-900 text-2xl font-bold text-center w-full capitalize">Admin Panel</h2>
             <hr className="text-gray-200 mt-6" />
