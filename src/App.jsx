@@ -5,12 +5,10 @@ import {SessionProvider} from "./context/SessionContext.jsx";
 
 function App() {
 
-    return <div className="bg-slate-800 size-full">
-        <div className="flex justify-center items-center h-full">
-            <SessionProvider>
-                <RouterProvider router={ routes } />
-            </SessionProvider>
-        </div>
+    return <div className="bg-slate-800 size-full min-h-screen">
+        <SessionProvider>
+            <RouterProvider router={ routes } />
+        </SessionProvider>
     </div>
 }
 

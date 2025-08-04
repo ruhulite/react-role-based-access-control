@@ -1,6 +1,6 @@
 import {useSession} from "../../context/SessionContext.jsx";
 
-const QuizList = ({items, itemDelete, editItem, viewOnly}) => {
+const QuizList = ({items, itemDelete = () => null, editItem = () => null, viewOnly}) => {
     const { user } = useSession()
 
     const handleEdit = (id) => {

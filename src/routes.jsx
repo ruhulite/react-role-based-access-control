@@ -6,6 +6,7 @@ import { ProtectedRoute } from "./components/ProtectedRoute.jsx";
 import AdminPermissionPage from "./pages/admin/AdminPermissionPage.jsx";
 import AdminPage from "./pages/admin/AdminPage.jsx";
 import ProductsPage from "./pages/ProductsPage.jsx";
+import QuizPage from "./pages/QuizPage.js";
 
 export const routes = createBrowserRouter([
     {
@@ -24,6 +25,11 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <HomePage />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: '/quiz',
+                element: <QuizPage />,
                 errorElement: <ErrorPage />,
             },
             {

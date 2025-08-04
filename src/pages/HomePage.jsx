@@ -1,33 +1,15 @@
-import React, {useEffect, useState} from 'react';
-import api from "../service/api.js";
-import {useNavigate} from "react-router-dom";
 import {useSession} from "../context/SessionContext.jsx";
-import QuizList from "../components/admin/QuizList.jsx";
+
+import Header from "../components/layout/Header.js";
+import Footer from "../components/layout/Footer.js";
 
 const HomePage = () => {
-    const navigate = useNavigate();
-    const { user, logout } = useSession()
+    const { user } = useSession()
 
-    const [items, setItems] = useState([]);
-    const [error, setError] = useState(null);
-
-    useEffect( () => {
-        api.get('/quizes').then((response) => {
-            setItems(response.data);
-        }).catch((error) => {
-            console.log(error);
-            setError(error);
-        })
-    }, []);
-
-    const handleLogout = () => {
-        logout(user);
-        navigate('/login');
-    }
-
-    return <div className="container container-md mx-auto px-2 flex flex-col w-full items-center h-full">
-        <div className="bg-white rounded-lg shadow-md mx-w-300 p-4 mt-10">
-            <h2 className="text-gray-900 text-2xl font-bold text-center w-full capitalize">Quiz Builder Application</h2>
+    return <>
+        <Header />
+        <div className="container container-md mx-auto bg-white rounded-lg shadow-md px-10 py-12 flex flex-col w-full mt-30">
+            <h2 className="text-gray-900 text-2xl font-bold text-center w-full capitalize">Dashboard</h2>
             <hr className="text-gray-200 mt-6" />
             <div className="flex items-start gap-2">
                 <div className="w-full mt-4">
@@ -39,24 +21,10 @@ const HomePage = () => {
                         <label className="font-bold">Permission:&nbsp;</label>{user.permissions.length > 1 ? user.permissions.map(permission => permission).join(', ') : user.permissions[0]}
                     </p>
                 </div>
-                {(user.role === "Super Admin" || user.role === "Admin") && (
-                    <button
-                        className="bg-blue-600 py-3 px-5 rounded mt-6 text-white w-60 cursor-pointer m-0"
-                        onClick={() => navigate('/admin')}
-                    >Admin Panel</button>
-                )}
-                <button
-                    className="bg-red-600 py-3 px-5 rounded my-6 text-white cursor-pointer m-0"
-                    onClick={handleLogout}
-                >Logout</button>
-            </div>
-            <hr className="text-gray-200 mt-6" />
-            {error && (<p className="text-red-500 text-center text-sm mb-3 mt-4">{error}</p>)}
-            <div className="w-full pt-3">
-                <QuizList items={items} viewOnly={true} />
             </div>
         </div>
-    </div>
+        <Footer />
+    </>
 };
 
 export default HomePage;
